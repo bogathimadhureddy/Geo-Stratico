@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Geo-Stratico Geotechnical Pvt Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Base layout -->
+  <link rel="stylesheet" href="../CSS/style.css">
+
+  <!-- Component-specific -->
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+
+  <!-- Page-specific -->
+  <link rel="stylesheet" href="../CSS/contact.css">
+
+  <script defer src="../JS/include.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    const popup = document.getElementById('successPopup');
+
+    if (!form || !popup) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      popup.style.display = 'block';
+
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 3000);
+
+      form.reset();
+    });
+  });
+</script>
+
+<body>
+
+  <!-- Load common header -->
+  <div id="include-header"></div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+          <h3 style="color: #0057b8;">Geo-Stratico Geotechnical Pvt. Ltd.</h3>
+          <p><strong>Address:</strong><br>
+            H.No.13-127, Mallikarjun Nagar Colony,<br>
+            Road No.05, Badangpet, Balapur Mandal,<br>
+            Ranga Reddy District - 500058,<br>
+            Telangana State, India
+          </p>
+          <p><strong>Phone:</strong><br>
+            +91 77940 10179<br>
+            +91 77805 79779<br>
+            +91 94900 99785
+          </p>
+          <p><strong>Email:</strong><br>
+            <a href="mailto:geostraticoltd@gmail.com">geostraticoltd@gmail.com</a><br>
+            <a href="mailto:info@geostratico.com">info@geostratico.com</a>
+          </p>
+
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <div class="popup success-popup" id="successPopup">
+            <p>✅ Message sent successfully!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Load common footer -->
+  <div id="include-footer"></div>
+
+<div class="popup" id="successPopup">
+  ✅ Message sent successfully!
+</div>
+
+</body>
+</html>
