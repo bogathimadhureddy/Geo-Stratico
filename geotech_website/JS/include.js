@@ -17,5 +17,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // ✅ FIXED PATHS
   // loadComponent("include-header", "components/header.html");
-  loadComponent("include-footer", "components/footer.html");
+  loadComponent("include-footer", "HTML/components/footer.html");
+
 });
