@@ -16,8 +16,9 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   // ✅ FIXED PATHS
-  // loadComponent("include-header", "components/header.html");
+  // loadComponent("include-header", "geotech_website/HTML/components/header.html");
   loadComponent("include-footer", "geotech_website/HTML/components/footer.html");
 
 });
+
 
