@@ -1,6 +1,6 @@
 /* Hero Banner */
 .services-hero {
-  background-image: url('../images/services_background_image.png'); /* Replace with your image */
+  background-image: url('https://github.com/bogathimadhureddy/Geo-Stratico/blob/2e70f90861f12754c9a6cfbea09f09624f44c309/images/services_background_image.png'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   height: 60vh;
