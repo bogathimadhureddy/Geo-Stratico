@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // ✅ FIXED PATHS
   // loadComponent("include-header", "geotech_website/HTML/components/header.html");
-  loadComponent("include-footer", "/Geo-Stratico/geotech_website/HTML/components/footer.html");
+  loadComponent("include-footer", "/Geo-Stratico/HTML/components/footer.html");
 
 });
 
