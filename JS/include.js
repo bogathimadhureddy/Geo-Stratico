@@ -21,6 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
     ? "components/footer.html"
     : "HTML/components/footer.html";
 
-  loadComponent("include-header", headerPath);
+  // loadComponent("include-header", headerPath);
   loadComponent("include-footer", footerPath);
 });
