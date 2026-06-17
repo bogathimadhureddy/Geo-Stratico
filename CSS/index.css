@@ -152,6 +152,7 @@ html, body {
     radial-gradient(circle at 10% 20%, rgba(173, 216, 230, 0.3) 2px, transparent 0),
     radial-gradient(circle at 90% 80%, rgba(173, 216, 230, 0.2) 1.5px, transparent 0),
     radial-gradient(circle at 50% 50%, rgba(173, 216, 230, 0.1) 3px, transparent 0); 
+  background-image: url('../images/services_image_home.png'); /* Update path as needed */ 
   background-size: 100px 100px;
   background-repeat: repeat;
   padding: 60px 20px;
