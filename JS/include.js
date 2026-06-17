@@ -5,21 +5,22 @@ window.addEventListener("DOMContentLoaded", () => {
       if (!res.ok) throw new Error(`Failed to fetch ${path}`);
       const data = await res.text();
       const target = document.getElementById(id);
-      if (target) {
-        target.innerHTML = data;
-      } else {
-        console.error(`Element with ID '${id}' not found in HTML.`);
-      }
+      if (target) target.innerHTML = data;
     } catch (error) {
       console.error("Error loading component:", error.message);
     }
   };
 
-  // ✅ FIXED PATHS
-  // loadComponent("include-header", "geotech_website/HTML/components/header.html");
-  loadComponent("include-footer", "/Geo-Stratico/HTML/components/footer.html");
+  const isInsideHTMLFolder = window.location.pathname.includes("/HTML/");
 
+  const headerPath = isInsideHTMLFolder
+    ? "components/header.html"
+    : "HTML/components/header.html";
+
+  const footerPath = isInsideHTMLFolder
+    ? "components/footer.html"
+    : "HTML/components/footer.html";
+
+  loadComponent("include-header", headerPath);
+  loadComponent("include-footer", footerPath);
 });
-
-
-
